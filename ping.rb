@@ -7,6 +7,7 @@ require 'dotenv'
 require './version.rb'
 
 Dotenv.load('bot.env')
+Dotenv.require_keys("BOT_TOKEN")
 
 # This statement creates a bot with the specified token and application ID. After this line, you can add events to the
 # created bot, and eventually run it.
